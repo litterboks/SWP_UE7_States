@@ -1,9 +1,9 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class main {
+public class Main {
 
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Launcher launcher = new LauncherImpl();
 		launcher.add("Charted 4");
 		launcher.add("Nevil May Die");

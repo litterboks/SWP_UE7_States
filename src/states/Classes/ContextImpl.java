@@ -7,7 +7,7 @@ public class ContextImpl implements Context {
 
 	private State state;
 	private String name;
-
+	
 	public ContextImpl(String name) {
 		this.state = new Uninstalled(this);
 		this.setName(name);

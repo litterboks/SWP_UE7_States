@@ -16,7 +16,7 @@ public class Updating extends StateImpl {
 			System.out.print(context.getName() + " is already installed and currently updating..\n\n");
 		} else {
 			context.changeState(new Installed(context));
-			context.getState().install();
+			context.install();
 		}
 	}
 
@@ -27,7 +27,7 @@ public class Updating extends StateImpl {
 			System.out.print("Currently updating " + context.getName() + ", please wait..\n\n");
 		} else {
 			context.changeState(new Installed(context));
-			context.getState().uninstall();
+			context.uninstall();
 		}
 	}
 
@@ -38,7 +38,7 @@ public class Updating extends StateImpl {
 			System.out.print("Currently updating " + context.getName() + ", please wait..\n\n");
 		} else {
 			context.changeState(new Installed(context));
-			context.getState().play();
+			context.play();
 		}
 	}
 
@@ -50,7 +50,7 @@ public class Updating extends StateImpl {
 		}
 		else{
 			context.changeState(new Installed(context));
-			context.getState().quit();
+			context.quit();
 		}
 	}
 
